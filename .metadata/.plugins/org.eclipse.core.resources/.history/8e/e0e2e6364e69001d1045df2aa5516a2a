@@ -1,0 +1,9 @@
+package com.nsk.project03;
+
+import java.util.Map;
+
+public interface BoardService {
+
+	String create(Map<String, Object> map);
+
+}

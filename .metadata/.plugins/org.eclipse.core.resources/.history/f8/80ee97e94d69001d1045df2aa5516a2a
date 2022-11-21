@@ -1,0 +1,5 @@
+package com.nsk.project03;
+
+public interface boardService {
+
+}
