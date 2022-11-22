@@ -127,7 +127,7 @@
 						<div><a href="/project03/update?num=${num}">수정하기</a></div>
 						<div><a href="/project03/index">리스트로 돌아가기</a></div>
 				    </div>
-			    </div>
+			    </div>       
 			    <div style="float: right;">
 		            <input type="hidden" name="num" value="${num}" />
 		            <input type="submit" value="삭제" class="delete"/>
