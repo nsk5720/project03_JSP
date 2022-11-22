@@ -15,12 +15,14 @@
 			UTF-8 인코딩을 사용
 		-->
 		<property name="url"				
-			value="jdbc:mysql://localhost:3306/project03?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+			value="jdbc:mysql://localhost:3306/ashram7?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
 		<!--  
 			DB사용 권한이 있는 유저 name과 password
 		-->
-		<property name="username" value="project03" />
-		<property name="password" value="1234" />
+		<!-- <property name="username" value="project03" />
+		<property name="password" value="1234" /> -->
+		<property name="username" value="ashram7" />
+		<property name="password" value="dhwndus77!A" />
 	</bean>
 		<!--
 			sqlSessionFactory: 데이터베이스와 연결을 맺고 끊어질 때까지의 라이프 사이클을 관리하는 sqlSession객체

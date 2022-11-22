@@ -57,5 +57,25 @@
         ]]>
     </delete>
     
+    
+    <select id="select_list" parameterType="hashMap" resultType="hashMap">
+        <![CDATA[
+           select
+            num,
+            title,
+            writer,
+            content,
+            insert_date
+           from
+            board
+            where 1 = 1
+        ]]>
+        <if test="keyword != null and reword != ''">
+        	and (title like CONCAT('%',#{keyword},'%') or writer like CONCAT('%',#{keyword},'%'))
+        </if>
+        order by insert_date desc
+    </select>  
+    
+    
 </mapper>
 

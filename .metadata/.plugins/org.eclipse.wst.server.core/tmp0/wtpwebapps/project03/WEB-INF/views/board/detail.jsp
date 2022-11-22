@@ -30,9 +30,7 @@
    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.3.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
-   <script type="text/javascript" >
-     
- </script>
+
 </head>
 <body>
 	<%@ include file="../main/headerLogin.jsp" %>
@@ -81,25 +79,21 @@
 		</div>	
 		<div id="middle" class="fl" style="height:100px;">
 			<div class="search">
-			<div class="fl">검색</div>
-			<input type="text" name="search" class="fl"/>
-			<a href="#" tabindex="9"><div class="searchButton fl"></div></a>
+				<div class="fl">검색</div>
+				<form>
+					<input type="text" placeholder="검색"  class="fl searchInput"/>
+				<!--<input type="submit" class="fl searchButton"/> -->
+				</form>
 			</div>
 		</div>
-		
-		
-		
-		
 		<div id="low" class="fl cf">
-		  <form name="frmArticle" method="post"  action="${contextPath}"  enctype="multipart/form-data">
+		  <form method="POST" action="/project03/delete">
 	      	<div>
 		  		<div class="viewNo">
 			  		<div class="fl" align="right" margin-right= "5px">
 				  		글번호
 					</div>
 					<div class="fl" border= "2px solid white">
-						<input type="text"  value="${article.articleNO }"  disabled />
-						<input type="hidden" name="articleNO" value="${article.articleNO}"  />
 					</div>
 				</div>
 				<div class="viewId fl">
@@ -128,24 +122,16 @@
 						<input type=text value="<fmt:formatDate value="${data.insert_date}" pattern="yyyy.MM.dd HH:mm:ss" />" disabled />
 					</div>   
 				</div>
-				<div id="tr_btn_modify"  >
-					<div colspan="2"   align="center" >
-						<input class="correct" type=button value="수정반영하기"   onClick="fn_modify_article(frmArticle)"  >
-						<input class="reset" type=button value="취소"  onClick="backToList(frmArticle)">
-					</div>   
-				</div> 
 				<div  id="tr_btn">
 					<div colspan="2" align="center">
 						<div><a href="/project03/update?num=${num}">수정하기</a></div>
-						<div><a href="/list">리스트로 돌아가기</a></div>
+						<div><a href="/project03/index">리스트로 돌아가기</a></div>
 				    </div>
-			  </div>
-			  <div style="float: right;">
-				<form method="POST" action="/delete">
-					<input type="hidden" name="bookId" value="${bookId}" />
-	            	<input class="delete" type="submit" value="삭제" />
-				</form>
-			  </div>
+			    </div>
+			    <div style="float: right;">
+		            <input type="hidden" name="num" value="${num}" />
+		            <input type="submit" value="삭제" class="delete"/>
+			   </div>
 			</div>
 		  </form>
 		</div>

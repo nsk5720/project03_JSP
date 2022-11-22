@@ -1,5 +1,6 @@
 package com.nsk.project03;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,14 +89,14 @@ public class BoardController {
 	    return mav;
 	}    
     
-    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+	@RequestMapping(value = "/delete", method = RequestMethod.POST)
     public ModelAndView deletePost(@RequestParam Map<String, Object> map) {
         ModelAndView mav = new ModelAndView();
 
         boolean isDeleteSuccess = this.boardService.remove(map);
         if (isDeleteSuccess) {
         //삭제가 성공했으면 상세 페이자 없으므로 목록으로 리다이렉트	
-            mav.setViewName("redirect:/list");
+            mav.setViewName("redirect:/index");
         } else {
         //삭제가 실패했으면 다시 상세 페이자로 이동
             String num = map.get("num").toString();
@@ -104,6 +105,23 @@ public class BoardController {
 
         return mav;
     }	
+    
+    @RequestMapping(value = "/index")
+    public ModelAndView list(@RequestParam Map<String, Object> map) {
+        
+    	List<Map<String, Object>> list = this.boardService.list(map);
+    	
+    	ModelAndView mav = new ModelAndView();
+    	mav.addObject("data", list);
+    	
+    	if (map.containsKey("keyword")) {
+    		mav.addObject("keyword", map.get("keyword"));
+    	}
+    	
+    	mav.setViewName("/board/index");
+    	return mav;
+    }	
+	
 	
 }
 

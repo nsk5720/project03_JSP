@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="등록"/>
+		<item key="selection" value="작성일"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="등록"/>
-			<item value="flag"/>
-			<item value="tabindex"/>
-			<item value="tab"/>
-			<item value="href"/>
-			<item value="/project03/index.jsp"/>
-			<item value="/project03/sub02/sub02.jsp"/>
-			<item value="/project03/sub03/sub03.jsp"/>
-			<item value="/project03/sub01/sub01.jsp"/>
-			<item value="href="/>
-			<item value="href=&quot;"/>
-			<item value="href=&quot;/"/>
-			<item value="href=&quot;/p"/>
-			<item value="/project03/board/listArticles.do"/>
-			<item value="/project03/sub02/sub02Login.jsp"/>
+			<item value="작성일"/>
+			<item value="property name=&quot;url&quot;"/>
+			<item value="세션"/>
+			<item value="iv class=&quot;boardContentNo fl&quot; width=&quot;5%&quot;&gt;${data.num}&lt;/div&gt;"/>
+			<item value="num"/>
+			<item value="content"/>
+			<item value="contentnum"/>
+			<item value="contentNum"/>
+			<item value="choose"/>
+			<item value="h3"/>
+			<item value="ithout ch"/>
+			<item value="list"/>
+			<item value="Insert title here"/>
+			<item value="charset=&quot;UTF-8&quot;"/>
+			<item value=".writingBtn"/>
 		</list>
 		<list key="replacehistory">
+			<item value="index"/>
 			<item value="#"/>
 			<item value="num"/>
 			<item value="img src=&quot;${pageContext.request.contextPath}/resources/"/>

@@ -14,7 +14,7 @@
 .boardContentDay{width: 154px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center;}
 
 .writingText{font-size:18px; line-height: 40px; color: #fff; text-align:center;}
-.writingBtn{background-color: #1776c2; width: 80px; height: 40px; float: right; margin: -30px 20px 0 0; border-radius: 15px;}
+.writingBtn{background-color: #1776c2; width: 80px; height: 40px; float: right; margin: 0px 20px 0 0; border-radius: 15px;}
 
 
 
@@ -62,7 +62,7 @@
 #tr_btn a{display: block; background-color: #2196f3; color: white; width: 125px; height: 50px; border-radius: 10px; font-size: 14px; margin-right: 10px; line-height: 50px;}
 .correct{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
 .reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
-
+.searchBtn{width: 50px; float: left;}
 
 
 /* replyForm.jsp */

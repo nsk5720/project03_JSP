@@ -8,7 +8,24 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
-	
+		 <display-name>project03</display-name>
+	  <welcome-file-list>		<!-- 로컬호스트/project03/ 로 들어올 때 가장 먼저 뜨는 페이지 우선 순위-->
+	    <welcome-file>index.jsp</welcome-file>
+	    <welcome-file>index.html</welcome-file>
+	    <welcome-file>index.htm</welcome-file>
+	    <welcome-file>index.jsp</welcome-file>
+	    <welcome-file>default.html</welcome-file>
+	    <welcome-file>default.htm</welcome-file>
+	    <welcome-file>default.jsp</welcome-file>
+	  </welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/err/error_404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/err/error_500.jsp</location>
+	</error-page>
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

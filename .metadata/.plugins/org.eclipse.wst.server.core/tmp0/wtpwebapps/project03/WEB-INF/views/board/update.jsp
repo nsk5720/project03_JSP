@@ -91,7 +91,7 @@
 				</div>
 				<div class="fl" class="wirteButton">
 					<input class="write" type="submit" value="수정하기"/>
-					<input class="reset" type="button" value="목록보기" onClick="backToList(this.form)"/>
+					<!-- <input class="reset" type="button" value="목록보기" onClick="/project03/list"/> -->
 				</div>
 			</div>
 		</form>
