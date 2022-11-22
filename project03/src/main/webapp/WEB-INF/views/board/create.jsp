@@ -91,6 +91,7 @@
 				</div>
 				<div class="fl" class="wirteButton">
 					<input class="write" type="submit" value="글쓰기"/>
+					<a href="/project03/index"><input class="reset" type="button" value="목록보기" onClick="/project03/list"/></a>
 				</div>
 			</div>
 		</form>

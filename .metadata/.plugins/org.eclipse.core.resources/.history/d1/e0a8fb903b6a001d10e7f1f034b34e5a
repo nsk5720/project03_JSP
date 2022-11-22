@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css"/>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.3.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 		
 	</head>
 	<body>
@@ -78,20 +78,20 @@
 			<div class="boardWrap">
 				<div class="titlePart">
 					<div class="fl titleLeft">글제목:</div>
-					<div class="fl titleRight" colspan="2"><input type="text" name="title" value="${data.title}"/></div>
+					<div class="fl titleRight" colspan="2"><input type="text" name="title"/></div>
 				</div>
 				<div class="contentPart">
 					<div class="fl contentLeft" valign="top">글내용:</div>
-					<div class="fl contentRight" colspan="2"><textarea type="text" name="content" rows="10" cols="65" maxlength="4000">${data.content}</textarea> </div>
+					<div class="fl contentRight" colspan="2"><textarea type="text" name="content" rows="10" cols="65" maxlength="4000"></textarea> </div>
 				</div>
 				<div class="imagePart">
 					<div class="fl imageLeft">작성자</div>
-					<div class="fl fileSelect"colspan="2"><input type="text" name="writer" value="${data.writer}"/></div>
+					<div class="fl fileSelect"colspan="2"><input type="text" name="writer"/></div>
 					<div class="fl imagePreview"></div>
 				</div>
 				<div class="fl" class="wirteButton">
-					<input class="write" type="submit" value="수정하기"/>
-					<a href="/project03/index"><input class="reset" type="button" value="목록보기" onClick="/project03/list"/></a>
+					<input class="write" type="submit" value="글쓰기"/>
+					
 				</div>
 			</div>
 		</form>
